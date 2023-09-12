@@ -7,6 +7,12 @@ function addlist(){
 	let text = document.createTextNode(input);
 	let li = document.createElement("li");
 	li.appendChild(text);
-	ol.appendChild(li);
+	if(input===""){
+		alert("Please do not Input Empty String!!!!")
+	}
+	else{
+		ol.appendChild(li);
+	}
+	
 	document.getElementById("newTodoInput").value="";
 }
